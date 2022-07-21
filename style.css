@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+    --general-text-color: rgba(0, 0, 0, 0.54);
+    --light-green: rgba(110, 169, 126, 1);
+    --strong-green: rgba(110, 169, 126, 1)
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.form-side, .img-side {
+    flex: 1;
+    padding: 30px;
+}
+
+.img-side {
+    background: bottom right /  contain no-repeat url("./assets/green-leafs.png") rgba(246, 246, 248, 1);
+}
+
+.form-side > .head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--general-text-color);
+    font-weight: 400;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+span {
+    color: var(--light-green);
+}
+
+span:hover {
+    border-bottom: solid 1px var(--light-green);
+    cursor: pointer;
+}
+
+.arrow-div  img:hover {
+    cursor: pointer;
+    transform: translateX(-5px);
+    transition-duration: 0.2;
+}
+
+.form-wrap {
+    min-width: 400px;
+    margin: auto auto;
+    justify-content: center;
+}
+
+.form-wrap h1 {
+    font-size: 48px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.63);
+    margin-bottom: 60px;
+}
+
+form > input, form > label{
+    display: block;
+    color: var(--general-text-color);
+}
+
+input[id=name], input[id=email], input[id=password], input[id=confirm-password] {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 9px;
+    border: rgba(0, 0, 0, 0.15) solid 1px;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 9px;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0px;
+}
+
+form input::placeholder {
+    color: rgba(0, 0, 0, 0.24);
+}
+
+.terms-wrap {
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+    margin-bottom: 44px;
+}
+
+label[for=checkbox] {
+    font-size: 13px;
+    margin-bottom: 0px;
+    color: var(--general-text-color);
+}
+
+label[for=checkbox] span {
+    border-bottom: var(--light-green) solid 1px;
+}
+
+input[id=terms] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: var(--strong-green);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin: 0 auto;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-side">
+            <div class="head">
+                <div class="arrow-div">
+                    <img src="./assets/Arrow.svg" alt="previous page">
+                </div>
+                <p>Already a member? <span>Sign In</span></p>
+            </div>
+            <div class="form-wrap">
+                <h1>Sign Up</h1>
+                <form action="/" method="post" onsubmit="return passwordMatch()">
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" id="name"  required>
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" id="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="Password" id="password" placeholder="6+ Characters"  minlength="6" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="Confirm Password" id="confirm-password" placeholder="">
+                    <div class="terms-wrap">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <label for="checkbox">I agree to all the statments included in the <span>terms of service</span></label>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            
+        </div>
+        <div class="img-side"></div>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
