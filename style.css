@@ -41,11 +41,11 @@
     height: 100%;
 }
 
-span {
+.form-side span {
     color: var(--light-green);
 }
 
-span:hover {
+.form-side span:hover {
     border-bottom: solid 1px var(--light-green);
     cursor: pointer;
 }
@@ -123,4 +123,35 @@ button {
     border-radius: 50px;
     border: none;
     margin: 0 auto;
+    cursor: pointer;
+}
+
+.img-side .logo-span {
+   font-weight: 300;
+   color: rgba(55, 83, 73, 1);
+}
+
+.img-side content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img-side p {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--strong-green);
+    letter-spacing: 2;
+}
+
+.img-side h2 {
+    margin: auto 0;
+    font-size: 64px;
+    font-weight: 200;
+    max-width: 400px;
+}
+
+.img-side h2 span {
+    font-weight: 300;
+    color: var(--strong-green)
 }
